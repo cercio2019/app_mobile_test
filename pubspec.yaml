@@ -1,0 +1,37 @@
+name: app_mobile_test
+description: "App movil Flutter que consume la API api-mobile (login + clientes + productos + usuarios)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Cliente HTTP para consumir la API REST (incluye soporte multipart para subir imagenes)
+  http: ^1.2.2
+
+  # Gestion de estado simple basada en ChangeNotifier + Provider/Consumer
+  provider: ^6.1.2
+
+  # Almacenamiento seguro del token JWT y de los datos de sesion
+  flutter_secure_storage: ^9.2.2
+
+  # Seleccion de imagenes desde galeria/camara para el modulo de productos
+  image_picker: ^1.1.2
+
+  # Formateo de moneda y fechas
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
